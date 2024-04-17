@@ -34,12 +34,12 @@ public class GameResultScreen extends JFrame {
         mouLose.setBounds(80, 300, 100, 100);
 
         if (isVictory){
-            panel.add(mouVictory);
-            panel.add(catLose);
-
-        }else{
             panel.add(catVic);
             panel.add(mouLose);
+
+        }else{
+            panel.add(catLose);
+            panel.add(mouVictory);
         }
 
 
@@ -114,8 +114,8 @@ public class GameResultScreen extends JFrame {
 
     public static void main(String[] args) {
         // example output
-        //boolean isVictory = false;
-        boolean isVictory = true;
+        boolean isVictory = false;
+        //boolean isVictory = true;
         int score = 1000;
         //String gameOverReason = "Your life is depleted.";
         String gameOverReason = "Congratulations! You reached the score threshold!";
